@@ -16,7 +16,7 @@ app.get('/bookmarks', (req, res) => {
   express.json();
   fetch(requestUri)
     .then(response => response.json())
-    .then(({ bookmarks, count, title }) => res.send({ count, bookmarks, title }))
+    .then(({ bookmarks }) => res.send(bookmarks))
     .catch((error) => {
       res.status(500);
       res.send({ error: error.message });
