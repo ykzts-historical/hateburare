@@ -1,1 +1,5 @@
 # hateburare
+
+## License
+
+[MIT](LICENSE)
